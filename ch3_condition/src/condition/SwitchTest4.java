@@ -49,7 +49,7 @@ public class SwitchTest4 {
                         break;
                 }
             default:
-                System.out.println("가위(1), 바위(2), 보(3) 중에 하나 입력하십시오");
+                System.out.println("가위(1), 바위(2), 보(3) 중에 하나를 입력하십시오");
                 break;
         }
 
