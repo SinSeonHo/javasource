@@ -32,5 +32,12 @@ public class ForEx2 {
             System.out.print(i + "   ");
         }
 
+        // int i = 0; for문 밖에 변수선언가능
+        // for (int i = 0, k = 1; i < args.length; i++) { 여러번수 한번에 선언가능
+        // }
+        // for (; ;) { for문 안에 다 날려도 문법적오류 x
+        //  이곳에 무한루프를 멈추기위한 코드
+        // }
+
     }
 }
