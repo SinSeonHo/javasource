@@ -33,26 +33,28 @@ public class Student {
     }
 
     public Student(int grade, int classNum) { // int grade, int classNum 전달인자 지역변수 (멤버변수아님)
-        this.grade = grade; // this => 객체 자기자신
+        this.grade = grade; // this => 객체 자기자신, 멤버변수 혹은 멤버메소드 앞에만 사용가능
         this.classNum = classNum;
     }
 
     // 기능 : 전화번호변경, 이메일변경, 학년변경, 반변경
     // 메소드 : 리턴타입 메소드명() {}
-    void changeTel() {
-
+    // 리턴(반환)타입 : 기본타입(int, boolean, char, double, float), 객체타입(대문자로시작), 배열,
+    // void(리턴타입 없음)
+    void changeTel(String phone) {
+        this.phone = phone;
     }
 
-    void changeEmail() {
-
+    void changeEmail(String email) {
+        this.email = email;
     }
 
-    void changeGrade() {
-
+    void changeGrade(int grade) {
+        this.grade = grade;
     }
 
-    void changeClassNum() {
-
+    void changeClassNum(int classNum) {
+        this.classNum = classNum;
     }
 
     @Override
