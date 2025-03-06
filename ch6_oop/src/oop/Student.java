@@ -7,17 +7,41 @@ public class Student {
     // 이메일(hong@gmail.com)
 
     // 멤버변수
-    String stuId;
-    String name;
-    int grade;
-    int classNum;
-    String phone;
-    String email;
+    private String stuId;
+    private String name;
+    private int grade;
+    private int classNum;
+    private String phone;
+    private String email;
 
     // 생성자 : 개발자가 명시하지 않으면 컴파일러가 자동으로 default 생성자 만들어 줌
     // 클래스명(){}
 
     public Student() { // 기본(default)생성자 생성자는 여러개 만들수있으나 ()안에 아무것도없거나 갯수가 달라야 함
+    }
+
+    public String getStuId() {
+        return stuId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public int getClassNum() {
+        return classNum;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     // 생성자 목적

@@ -3,9 +3,9 @@ package oop;
 public class Account {
     // 속성 : 계좌번호(ano), 이름(owner), 잔액(balance)
 
-    String ano;
-    String owner;
-    long balance;
+    private String ano;
+    private String owner;
+    private long balance;
 
     // 생성자
 
@@ -23,12 +23,28 @@ public class Account {
     // 기능 : 예금하다(잔액 = 잔액 + 예금액), 출금하다(잔액 = 잔액 - 출금액)
     // deposit, withdraw
 
-    void deposit(long money) {
-        this.balance += money;
+    public String getAno() {
+        return ano;
     }
 
-    void withdraw(long money) {
-        this.balance -= money;
+    public String getOwner() {
+        return owner;
+    }
+
+    public long getBalance() {
+        return balance;
+    }
+
+    void deposit(long amount) {
+        this.balance += amount;
+    }
+
+    void withdraw(long amount) {
+        // 인출액이 잔액보다 작으면 출금수행
+        if (amount > balance) {
+            return;
+        }
+        this.balance -= amount;
     }
 
     @Override

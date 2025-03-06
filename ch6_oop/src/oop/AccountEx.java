@@ -12,10 +12,10 @@ public class AccountEx {
 
         // 10000원 입금
         account.deposit(10000);
-        System.out.println("현재 잔액 : " + account.balance);
+        System.out.println("현재 잔액 : " + account.getBalance());
 
         // 5000원 출금
         account.withdraw(5000);
-        System.out.println("현재 잔액 : " + account.balance);
+        System.out.println("현재 잔액 : " + account.getBalance());
     }
 }
