@@ -15,4 +15,5 @@ public class Card {
     // 폭, 높이 (카드의 공통속성)
     static int width = 100;
     static int height = 250;
+
 }

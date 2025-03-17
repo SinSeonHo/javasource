@@ -26,6 +26,6 @@ public class ChildEx {
         // 자식 = 부모 (x) 강제형변환 불가
         Parent parent2 = new Parent();
         child2 = (Child) parent2;
-        child2.method3();
+        child2.method3(); // ClassCastException
     }
 }
