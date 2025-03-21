@@ -15,7 +15,7 @@
 5) limit() : 스트림의 일부를 잘라낼때 사용
 6) peek() : 중간연산 확인
 
-- 최종처리
+- 최종처리 (구문당 한번만 실행가능)
 1) forEach()
 2) collect()
 3) count() / sum() / average() / max() / min()
