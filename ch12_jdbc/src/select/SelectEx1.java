@@ -25,6 +25,7 @@ public class SelectEx1 {
             // 1521 => 오라클 서버 포트번호
             // xe => 오라클DB명 (정해져있음 변경은가능)
 
+            // Connection 객체 생성
             String url = "jdbc:oracle:thin:@localhost:1521:xe";
             String user = "scott";
             String password = "tiger";
@@ -42,6 +43,7 @@ public class SelectEx1 {
             pstmt = con.prepareStatement(sql);
 
             // Query 수행 및 결과 담기
+            // SELECT 구문에서는 executeQuery사용
             rs = pstmt.executeQuery();
 
             // ResultSet 객체로부터 데이터 추출
